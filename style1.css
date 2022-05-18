@@ -16,6 +16,7 @@ body {
 }
 
 a {
+  
   color: white;
   font-weight: 100;
   letter-spacing: 2px;
@@ -26,7 +27,10 @@ a {
   width: 100%;
   text-align: center;
   transition: all 0.5s;
+
+ 
 }
+
 
 a:hover {
   background: rgba(0, 0, 0, 0.3);
@@ -36,18 +40,48 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
+
+  
 }
 
 /* Flex Container */
 .flex-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.flex-nav li {
+  flex-grow: 1
+  
+}
+
+.social {
+  width: 0%;
+  align-items: flex-end;
+  flex-direction: row;
+
+}
+
 @media all and (max-width: 1000px) {
+  ul li {
+   
+   width: 50%;  
+   align-content: center;
+}
+.social {
+   display: flex;
+   width: 25%;
+ }
 }
 
 @media all and (max-width: 500px) {
-}
+
+ 
+ul li {  
+ width: 100%;
+ }}
